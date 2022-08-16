@@ -4,47 +4,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS-Calculator</title>
-    <link rel="stylesheet" href="main.scss">
+    <link rel="stylesheet" href="main.css">
     <script src="./index.js"></script>
 </head>
 <body>
     <!--create table -->
-<table>
-
-    <tr> <!--display & clear-->
-        <td colspan="3"><input class="display-box" type="text" id="result" disabled /></td>
-        <td><input type="button" value="C" onclick="clearScreen()" id="btn" /></td>
-        
-    </tr>
-
-    <tr>   <!--1 2 3 / buttons-->
-      <td><input type="button" value="1" onclick="display(1)" /></td>
-      <td><input type="button" value="2" onclick="display(2)"/></td>
-      <td><input type="button" value="3" onclick="display(3)"/></td>
-      <td><input type="button" value="/" onclick="display('/')"/></td>
-    </tr>
-
-    <tr><!--4 5 6 * buttons-->
-        <td><input type="button" value="4" onclick="display(4)"/></td>
-        <td><input type="button" value="5" onclick="display(5)"/></td>
-        <td><input type="button" value="6" onclick="display(6)"/></td>
-        <td><input type="button" value="*" onclick="display('*')"/></td>
-    </tr>
+<div class="calculatorGrid">
+        <div class="output">
+            <div class="previous-operand">123</div>
+            <div class="current-operand">456</div>
+        </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
     
-    <tr><!--7 8 9 - buttons-->
-        <td><input type="button" value="7" onclick="display(7)"/></td>
-        <td><input type="button" value="8" onclick="display(8)"/></td>
-        <td><input type="button" value="9" onclick="display(9)"/></td>
-        <td><input type="button" value="-" onclick="display('-')"/></td>
-    </tr>
-
-    <tr><!--0 . = + buttons-->
-        <td><input type="button" value="0" onclick="display(0)"/></td>
-        <td><input type="button" value="." onclick="display('.')"/></td>
-        <td><input type="button" value="=" onclick="calculate()" id="btn"/></td>
-        <td><input type="button" value="+" onclick="display('+')"/></td>
-    </tr>
-    
-</table>
+</div>
 </body>
 </html>
