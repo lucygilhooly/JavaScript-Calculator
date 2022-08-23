@@ -10,7 +10,27 @@ body {
   background: linear-gradient(to right, #ce91cd, #95ea73);
 }
 
-.calculatorGrid {
+.calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.calculator__display {
+  grid-column: 1/-1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 25vh;
+  border-radius: 10px;
+  font-size: 15vh;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 10px;
+}
+.calculator__keys {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -18,35 +38,17 @@ body {
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
-.calculatorGrid button {
+.calculator__keys button {
   cursor: pointer;
   font-size: 2rem;
   border: 1px solid #FFFFFF;
+  border-radius: 50px;
   outline: none;
   background-color: rgba(255, 255, 255, 0.75);
 }
-.calculatorGrid button:hover {
+.calculator__keys button:hover {
   background-color: #a9a9a9;
 }
-.calculatorGrid .span-two {
+.calculator__keys .span-two {
   grid-column: span 2;
-}
-.calculatorGrid .output {
-  grid-column: 1/-1;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 10px;
-  word-wrap: break-word;
-  word-break: break-all;
-}
-.calculatorGrid .output .previous-operand {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 1.5rem;
-}
-.calculatorGrid .output .current-operand {
-  color: white;
-  font-size: 2.5rem;
 }
