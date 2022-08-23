@@ -113,36 +113,9 @@ function inputOperator(event) {
 //     if (currentOpText.innerHTML === ""){
 //         return;
 //     }
-// let a = Number(currentOpText.innerHTML);
-// let b = Number(previousOpText.innerHTML);
-// let answer;
-// switch (computeOperator) {
-//     case "multiply":
-//         answer = b * a;
-//         break;
-//     case "divide":
-//         answer = b/a;
-//         break;
-//     case "add":
-//         answer = b + a;
-//         break;
-//     case "subtract":
-//         answer = b - a;
-//         break;
-//     default:
-//         return;
-// }}
-// // when operator button is pressed apply (aka + - * /)
 // //equalsButton.addEventListener('click', calculate)
 // //deleteButton.addEventListener('click', del)
 // //allClearButton.addEventListener('click', reset)
-// //const display = document.getElementsByClassName("calculator__display")
-// //let displayCurrent = "";
-// //function input(event) {
-// //    let inputValue = event.target.innerText;
-// //    displayCurrent += inputValue;
-// //    display.innerText = displayCurrent;
-// //}
 // //function calculate() {
 // //}
 // //function reset() {
